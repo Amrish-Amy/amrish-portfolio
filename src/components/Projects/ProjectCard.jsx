@@ -52,8 +52,8 @@ const ProjectCard = (props) => {
             bottom: "0px",
           }}
         >
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          {props.showIcon && <BsGithub /> } &nbsp;
+          {props.isBlog ? "Visit" : "GitHub"}
         </Button>
         {"\n"}
         {"\n"}

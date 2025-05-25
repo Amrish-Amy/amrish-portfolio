@@ -3,10 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "../components/Projects/ProjectCard";
 import Particle from "../components/Particle";
 import pg from "../assets/projects/pg.png";
-import project from "../assets/projects/project.jpeg";
-import lift from "../assets/projects/lift.png";
+import visible from "../assets/projects/visible.jpeg";
+import football from "../assets/projects/find-football.jpeg";
 import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
+import straightTalk from "../assets/projects/straightTalk.jpeg";
+import amrishportfolio from "../assets/projects/amrishportfolio.jpeg";
+import nexiawellness from "../assets/projects/nexiaWellness.jpeg";
+import dnb from "../assets/projects/dnb.jpeg";
 
 const Projects = () => {
   return (
@@ -22,62 +25,67 @@ const Projects = () => {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={lift}
-              isBlog={false}
-              title="Lift-Buddy"
-              description="This online ride-sharing platform boasts a responsive front-end design, complete with an admin panel built using React and Material-UI. With the integration of Google Maps API, users can easily access directions on the map. The platform allows for full CURD functionality on profiles and posts, and users can confirm or cancel a ride from a post and message each other after confirmation. Additionally, users can easily reset their password. The back-end is powered by a Node Express server and utilizes MongoDB for the database management."
-              ghLink="https://github.com/19sajib/lift-buddy"
+              imgPath={football}
+              isBlog={true}
+              title="Find England Football"
+              description="The Find Football website (https://find.englandfootball.com/) is a ReactJS-based platform provided by England Football that allows users to locate football activities, facilities, and opportunities across England. The Find Football platform acts as a centralized hub to discover football-related opportunities, catering to players, coaches, and football enthusiasts of all ages and skill levels. It simplifies the process of finding local football events, clubs, and facilities while promoting inclusivity and community engagement."
+              ghLink="https://find.englandfootball.com/"
+              showIcon={false}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={project}
-              isBlog={false}
-              title="Social Media"
-              description="This platform features a responsive interface built with Reactjs and CSS, allowing users to easily manage their profiles and posts through CRUD activities. The option to follow other users and interact with their posts (like or dislike) is also available, with suggestions for new users to follow. Users can only view posts from their followed users and can only engage in chat with those they follow. The backend is powered by Nodejs and Expressjs server, while MongoDB is utilized as the database."
-              ghLink="https://github.com/19sajib/social-media"
+              imgPath={visible}
+              isBlog={true}
+              title="Visible by verizon"
+              description="Visible (https://www.visible.com/) is a U.S.-based, all-digital wireless service provider owned by Verizon Communications. Launched in 2018, it operates as a mobile virtual network operator (MVNO), delivering prepaid, contract-free mobile plans exclusively through its website and mobile app, without any physical retail locations. Visible is designed for digitally savvy consumers seeking affordable, straightforward mobile service without the complexities of traditional carriers. Its app-based model appeals to users comfortable managing their mobile plans online."
+              ghLink="https://www.visible.com/"
+              showIcon={false}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
-              isBlog={false}
-              title="E‑Commerce Website"
-              description="This ecommerce website utilizes a REST API built with Nodejs and Expressjs, allowing for easy CRUD operations on user profiles, products and admin panel. The user interface is designed for efficient product management and includes a complete purchase process. The admin panel, accessible for CRUD on users and products, includes a chart for statistics display. Stripe API is integrated to handle customer payments. The website uses MongoDB and Firebase as the database."
-              ghLink="https://github.com/19sajib/mern-stack-ecommerce"
+              imgPath={straightTalk}
+              isBlog={true}
+              title="straighttalk - Telecom Website"
+              description="Straight Talk Wireless is a U.S.-based prepaid mobile service provider offering no-contract plans and devices. Owned by Verizon and sold exclusively through Walmart and its online platforms, Straight Talk operates as a mobile virtual network operator (MVNO), utilizing Verizon's extensive 4G LTE and 5G networks to deliver nationwide coverage. Straight Talk provides a variety of prepaid plans without long-term commitments, catering to diverse user needs."
+              ghLink="https://www.straighttalk.com/"
+              showIcon={false}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={pg}
-              isBlog={false}
-              title="Blog Website"
-              description="This blogging application features a RESTful API server built with Nodejs and Expressjs. The data is retrieved from the API server and displayed on a user-friendly interface designed using React, Redux, and styled-components for a seamless experience."
-              ghLink="https://github.com/19sajib/mern-blog-app"
+              imgPath={dnb}
+              isBlog={true}
+              title="Dun & Bradstreet India"
+              description="Dun & Bradstreet India (https://www.dnb.co.in/) is a leading provider of business decisioning data and analytics, enabling companies to enhance performance through comprehensive insights. Leveraging the extensive Dun & Bradstreet Data Cloud, which encompasses over 595 million business records, the platform offers solutions across finance, risk, compliance, ESG (Environmental, Social, and Governance), and sales & marketing domains."
+              ghLink="https://www.dnb.co.in/"
+              showIcon={false}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={krypto}
-              isBlog={false}
-              title="Project Krypto"
-              description="Project Krypto is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It allows users to interact with their Metamask wallet and send Ethereum."
-              ghLink="https://github.com/19sajib/Project-Krypto-Web-3.0"
-              demoLink="https://project-krypto.netlify.app/"
+              imgPath={nexiawellness}
+              isBlog={true}
+              title="Nexia Wellness"
+              description="Nexia Wellness is an online health and wellness consultation marketplace designed to connect individuals with holistic health practitioners. The platform emphasizes a 'wholistic' approach, integrating conventional Western medicine with holistic practices to address the mind, body, and spirit. "
+              ghLink="https://www.nexiawellness.com/"
+              showIcon={false}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={kickstart}
+              imgPath={amrishportfolio}
               isBlog={false}
-              title="Solidity Kickstart"
-              description="Solidity Kickstart is a Web 3 project that utilizes an Ethereum smart contract created using Solidity. It includes all the functionality of a kickstart platform, enabling users to interact with their Metamask wallet, transfer Ethereum and participate in kickstart campaigns."
-              ghLink="https://github.com/19sajib/Solidity-Kickstart"
+              title="Portfolio Website"
+              description="The portfolio website at amrish-portfolio.vercel.app is a personal showcase built using React.js and deployed via Vercel. Given the deployment on Vercel and the use of React.js, it's likely that the site features a responsive design, interactive components, and modern web development practices."
+              demoLink="https://amrish-portfolio.vercel.app/"
+              ghLink="https://github.com/Amrish-Amy/amrish-portfolio"
             />
           </Col>
         </Row>
